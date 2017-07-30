@@ -16,6 +16,7 @@ public class CrawlingDataForJsonResponse implements ICrawlingData{
 	@SuppressWarnings("unchecked")
 	public JSONObject crawling(String link) throws Exception {
 		URL url = new URL(link);
+		JSONObject jsonObject= null;
 		HttpsURLConnection connection = (HttpsURLConnection) url.openConnection();
 		connection.setRequestMethod("GET");
 		int responseCode = connection.getResponseCode();
@@ -31,7 +32,7 @@ public class CrawlingDataForJsonResponse implements ICrawlingData{
 		}
 		in.close();
 		//print result
-		JSONObject jsonObject = new JSONObject(response.toString());
+		jsonObject = new JSONObject(response.toString());
 		return jsonObject;
 	}
 
