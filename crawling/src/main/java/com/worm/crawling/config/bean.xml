@@ -2,7 +2,6 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean id="crawlingDataForJSONReponse" class="com.worm.crawling.impl.CrawlingDataForJsonResponse"  />
-	<bean id="crawlingDataForHTMLReponse" class="com.worm.crawling.impl.CrawlingDataForHTMLReponse"  />
-	
+	<bean id="networkUtility" class="com.worm.crawling.utility.NetworkUtility"  />
+	<bean id="crawlingKetQuaXoSo" class="com.worm.crawling.impl.CrawlingKetQuaXoSo"  />
 </beans>
