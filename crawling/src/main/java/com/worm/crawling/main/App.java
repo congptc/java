@@ -26,7 +26,7 @@ public class App {
 			@Override
 			public void run() {
 				try {
-					iCrawlingData.crawling("http://ketqua.net",context);
+					System.out.println(""+iCrawlingData.crawling("http://ketqua.net"));
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -37,7 +37,7 @@ public class App {
 	}
 
 	public void crawlingJSONData() throws Exception {
-		JSONObject object = (JSONObject) iCrawlingData.crawling("https://s2.bitcoinwisdom.com/ticker",context);
+		JSONObject object = (JSONObject) iCrawlingData.crawling("https://s2.bitcoinwisdom.com/ticker");
 		System.out.println(object.getJSONObject("btcebtcusd").getDouble("last"));
 	}
 

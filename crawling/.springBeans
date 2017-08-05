@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/main/java/com/worm/crawling/config/bean.xml</config>
+		<config>src/main/java/com/worm/crawling/config/entityBean.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
